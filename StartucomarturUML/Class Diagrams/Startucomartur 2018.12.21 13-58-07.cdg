@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Startucomartur">
+  <ClassDiagramComponents>
+    <Class name="Excepcionapp" package="startucomartur" visibility="public" xPosition="74.0" yPosition="616.0">
+      <Fields>
+        <Field name="NADIEREGISTRADO" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="NUMARGUMENTOS" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="ESPECIEINCORRECTA" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="PLANETAINCORRECTO" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="DATOINCORRECTO" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="NOSERPLANETA" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="EXISTESER" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="NOEXISTESER" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="SERNOMODIFICADO" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="OPINCORRECTA" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="EDADINCORRECTA" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="MEDITACIONINCORRECTO" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="FUERZAINCORRECTO" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="MAXSERES" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="VALORINCORRECTO" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="codigo" type="int" visibility="private"/>
+        <Field name="messages" type="List&lt;String&gt;" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="codigo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMessage" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vulcan" package="startucomartur" visibility="public" xPosition="203.0" yPosition="202.0">
+      <Fields>
+        <Field name="meditacion" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="meditacion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getMeditacion" returnType="int" visibility="public"/>
+        <Method name="setMeditacion" returnType="void" visibility="public">
+          <Argument type="int" name="meditacion"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Aplicacion" package="startucomartur" visibility="public" xPosition="1390.0" yPosition="31.0">
+      <Fields>
+        <Field name="manejador" type="Manejador" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="guardasalida" returnType="void" visibility="public"/>
+        <Method name="procesa" returnType="void" visibility="public">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Klingon" package="startucomartur" visibility="public" xPosition="431.0" yPosition="1153.0">
+      <Fields>
+        <Field name="fuerza" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="fuerza"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getFuerza" returnType="int" visibility="public"/>
+        <Method name="setFuerza" returnType="void" visibility="public">
+          <Argument type="int" name="fuerza"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Metodos" package="startucomartur" visibility="public" xPosition="1234.0" yPosition="317.0">
+      <Fields>
+        <Field name="carpeta" type="String" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="existecarpeta" returnType="boolean" visibility="public" isStatic="true"/>
+        <Method name="creacarpeta" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="leefichero" returnType="ArrayList&lt;Ser&gt;" visibility="public" isStatic="true">
+          <Argument type="String" name="fichero"/>
+        </Method>
+        <Method name="primeramayuscula" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="palabra"/>
+        </Method>
+        <Method name="crealinea" returnType="String" visibility="private" isStatic="true">
+          <Argument type="Ser" name="ser"/>
+        </Method>
+        <Method name="anadeaserarchivo" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Ser" name="nuevoser"/>
+          <Argument type="String" name="planeta"/>
+        </Method>
+        <Method name="grabasalida" returnType="void" visibility="public" isStatic="true">
+          <Argument type="ArrayList&lt;String&gt;" name="salida"/>
+        </Method>
+        <Method name="grabafichero" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="planeta"/>
+          <Argument type="ArrayList&lt;Ser&gt;" name="seres"/>
+        </Method>
+        <Method name="interpretalinea" returnType="Ser" visibility="private" isStatic="true">
+          <Argument type="String" name="linea"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ser" package="startucomartur" visibility="public" isAbstract="true" xPosition="957.0" yPosition="82.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Manejador" package="startucomartur" visibility="public" xPosition="1727.0" yPosition="132.0">
+      <Fields>
+        <Field name="planetas" type="ArrayList&lt;Planeta&gt;" visibility="package"/>
+        <Field name="salida" type="ArrayList&lt;String&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSalida" returnType="ArrayList&lt;String&gt;" visibility="public"/>
+        <Method name="addsalida" returnType="void" visibility="public">
+          <Argument type="String" name="texto"/>
+        </Method>
+        <Method name="muestra" returnType="void" visibility="private">
+          <Argument type="String" name="texto"/>
+        </Method>
+        <Method name="seresdeespecie" returnType="void" visibility="public">
+          <Argument type="String" name="especie"/>
+        </Method>
+        <Method name="dameposser" returnType="int[]" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="listadoseres" returnType="void" visibility="public"/>
+        <Method name="borraser" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="censarser" returnType="void" visibility="public">
+          <Argument type="String" name="especie"/>
+          <Argument type="String" name="planeta"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="valor"/>
+        </Method>
+        <Method name="modificaser" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="nuevodato"/>
+        </Method>
+        <Method name="dameposicionplaneta" returnType="int" visibility="private">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="cargadatos" returnType="void" visibility="private"/>
+        <Method name="grabaficheros" returnType="void" visibility="public"/>
+        <Method name="leeficheros" returnType="void" visibility="private"/>
+        <Method name="creaplanetas" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Planeta" package="startucomartur" visibility="public" xPosition="1010.0" yPosition="1153.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="seres" type="ArrayList&lt;Ser&gt;" visibility="private"/>
+        <Field name="razasnoadmitidas" type="String[]" visibility="private"/>
+        <Field name="maxseres" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String[]" name="razasnoadmitidas"/>
+          <Argument type="int" name="maxseres"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSeres" returnType="ArrayList&lt;Ser&gt;" visibility="public"/>
+        <Method name="anadeser" returnType="void" visibility="public">
+          <Argument type="Ser" name="nuevoser"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="readFile" returnType="void" visibility="public"/>
+        <Method name="saveFile" returnType="void" visibility="public"/>
+        <Method name="borraserpos" returnType="void" visibility="public">
+          <Argument type="int" name="pos"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Andorian" package="startucomartur" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="aenar" type="Boolean" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="Boolean" name="aenar"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getAenar" returnType="Boolean" visibility="public"/>
+        <Method name="setAenar" returnType="void" visibility="public">
+          <Argument type="Boolean" name="aenar"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Startucomartur" package="startucomartur" visibility="public" xPosition="1335.0" yPosition="699.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Nibirian" package="startucomartur" visibility="public" xPosition="89.0" yPosition="1153.0">
+      <Fields>
+        <Field name="carnivoro" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="Boolean" name="carnivoro"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="isCarnivoro" returnType="boolean" visibility="public"/>
+        <Method name="setCarnivoro" returnType="void" visibility="public">
+          <Argument type="boolean" name="carnivoro"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Human" package="startucomartur" visibility="public" xPosition="720.0" yPosition="1153.0">
+      <Fields>
+        <Field name="edad" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getEdad" returnType="int" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="int" name="edad"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="seres" source="startucomartur.Planeta" target="startucomartur.Ser" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ser&gt;"/>
+    <IsRelation name="is" source="startucomartur.Human" target="startucomartur.Ser"/>
+    <IsRelation name="is" source="startucomartur.Vulcan" target="startucomartur.Ser"/>
+    <HasRelation name="planetas" source="startucomartur.Manejador" target="startucomartur.Planeta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Planeta&gt;"/>
+    <HasRelation name="manejador" source="startucomartur.Aplicacion" target="startucomartur.Manejador" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="startucomartur.Andorian" target="startucomartur.Ser"/>
+    <IsRelation name="is" source="startucomartur.Nibirian" target="startucomartur.Ser"/>
+    <UseRelation source="startucomartur.Metodos" target="startucomartur.Ser" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="startucomartur.Klingon" target="startucomartur.Ser"/>
+    <UseRelation source="startucomartur.Planeta" target="startucomartur.Ser" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

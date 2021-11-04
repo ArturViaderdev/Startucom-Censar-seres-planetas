@@ -1,0 +1,59 @@
+< Nobody registered yet >
+< ERROR 002: Especie incorrecta >
+< POPULATION BY RACE >
+< OK: Ser censado correctamente en el planeta >
+< ERROR 001: N.º de argumentos inválido >
+< ERROR 007: No existe ningún ser con ese nombre >
+< ERROR 002: Especie incorrecta >
+< ERROR 003: Planeta incorrecto >
+< ERROR 004: Dato incorrecto >
+< OK: Ser censado correctamente en el planeta >
+< ERROR 011: Nivel de meditación incorrecto >
+< POPULATION BY PLANET >
+< Vulcano >
+Vulcan-Spock-10
+< Nibiru >
+Nibirian-pepe-novegetarian
+< ERROR 004: Dato incorrecto >
+< ERROR 011: Nivel de meditación incorrecto >
+< ERROR 005: No se puede registrar ese ser en ese planeta >
+< OK: Ser censado correctamente en el planeta >
+< POPULATION BY RACE >
+Vulcan-Spock-10-Vulcano
+Vulcan-Ash-8-Kronos
+< ERROR 008: El ser no permite ser modificado >
+< ERROR 006: Ya existe un ser censado con ese nombre >
+< OK: Ser censado correctamente en el planeta >
+< ERROR 007: No existe ningún ser con ese nombre >
+< OK: Ser censado correctamente en el planeta >
+< OK: Ser censado correctamente en el planeta >
+< OK: Ser censado correctamente en el planeta >
+< ERROR 009: Operación incorrecta >
+< ERROR 001: N.º de argumentos inválido >
+< OK: ser modificado correctamente >
+< POPULATION BY PLANET >
+< Vulcano >
+Vulcan-Spock-10
+< Andoria >
+Andorian-Swiper-aenar
+< Nibiru >
+Andorian-Sally-noaenar
+Nibirian-pepe-novegetarian
+< Kronos >
+Human-Maria-22
+Klingon-Watch-280
+Vulcan-Ash-8
+< OK: Ser censado correctamente en el planeta >
+< ERROR 012: Valor de fuerza incorrecto >
+< ERROR 007: No existe ningún ser con ese nombre >
+< OK: Ser censado correctamente en el planeta >
+< OK: Ser borrado correctamente >
+< POPULATION BY RACE >
+Klingon-Wolfang-319-Andoria
+< ERROR 001: N.º de argumentos inválido >
+< OK: Ser censado correctamente en el planeta >
+< POPULATION BY RACE >
+Andorian-Swiper-aenar-Andoria
+Andorian-Aisha-aenar-Andoria
+Andorian-Sally-noaenar-Nibiru
+Andorian-Kirks-noaenar-Kronos

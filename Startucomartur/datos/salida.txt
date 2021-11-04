@@ -1,0 +1,70 @@
+Error 000:Nadie registrado.
+Error 002: Especie incorrecta
+<Población por raza VULCAN>
+Existen 0 seres de la especie VULCAN
+Ser añadido.
+Error 001:Número de paŕametros incorrecto.
+Error 007: No existe un ser con ese nombre.
+Error 002: Especie incorrecta
+Error 003: Planeta incorrecto.
+Error 004: Parámetro incorrecto.
+Ser añadido.
+Error 011: Nivel de meditación incorrecto.
+<Población por planeta>
+Planeta Vulcano
+Vulcan{nombre=Spock,meditacion=10}
+Planeta Nibiru
+Nibirian{nombre=pepe novegetarian}
+Error 004: Parámetro incorrecto.
+Error 011: Nivel de meditación incorrecto.
+Error 005: No se puede registrar un ser de este tipo en este planeta.
+Ser añadido.
+<Población por raza vulcan>
+Vulcan{nombre=Spock,meditacion=10}-Vulcano
+
+Vulcan{nombre=Ash,meditacion=8}-Kronos
+
+Existen 2 seres de la especie vulcan
+Error 008: El ser no permite ser modificado.
+Error 006: Ya existe un ser censado con ese nombre.
+Ser añadido.
+Error 007: No existe un ser con ese nombre.
+Ser añadido.
+Ser añadido.
+Ser añadido.
+Error 009: Operación incorrecta.
+Error 001:Número de paŕametros incorrecto.
+Ser modificado.
+<Población por planeta>
+Planeta Vulcano
+Vulcan{nombre=Spock,meditacion=10}
+Planeta Nibiru
+Andorian{nombre=Sally,aenar=false}
+Nibirian{nombre=pepe novegetarian}
+Planeta Andoria
+Andorian{nombre=Swiper,aenar=true}
+Planeta Kronos
+Vulcan{nombre=Ash,meditacion=8}
+Human{nombre=Maria,edad=22}
+Klingon{nombre=Watch,fuerza=280}
+Ser añadido.
+Error 012: Varlor de fuerza incorrecto.
+Error 007: No existe un ser con ese nombre.
+Ser añadido.
+Ser borrado.
+<Población por raza klingon>
+Klingon{nombre=Wolfang,fuerza=319}-Andoria
+
+Existen 1 seres de la especie klingon
+Error 001:Número de paŕametros incorrecto.
+Ser añadido.
+<Población por raza andorian>
+Andorian{nombre=Sally,aenar=false}-Nibiru
+
+Andorian{nombre=Swiper,aenar=true}-Andoria
+
+Andorian{nombre=Aisha,aenar=true}-Andoria
+
+Andorian{nombre=Kirks,aenar=false}-Kronos
+
+Existen 4 seres de la especie andorian
